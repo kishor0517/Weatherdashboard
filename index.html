@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Glass Weather — Weather App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="card">
+      <header class="card-head">
+        <h1>Glass Weather</h1>
+        <div class="search">
+          <input id="cityInput" type="search" placeholder="Enter city (e.g. Mumbai)" />
+          <button id="searchBtn">Search</button>
+        </div>
+      </header>
+
+      <section id="result" class="result hidden">
+        <div class="weather-left">
+          <div id="icon" class="icon"></div>
+        </div>
+
+        <div class="weather-right">
+          <h2 id="cityName">City</h2>
+          <p id="desc" class="muted">Condition</p>
+
+          <div class="metrics">
+            <div class="metric">
+              <div class="value" id="temp">--°C</div>
+              <div class="label">Temperature</div>
+            </div>
+            <div class="metric">
+              <div class="value" id="humidity">--%</div>
+              <div class="label">Humidity</div>
+            </div>
+            <div class="metric">
+              <div class="value" id="wind">-- m/s</div>
+              <div class="label">Wind</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="error" class="error hidden"></div>
+
+      <footer class="card-foot">
+        <small>Powered by OpenWeatherMap • Modern glass UI</small>
+      </footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
