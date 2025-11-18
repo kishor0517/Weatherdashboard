@@ -34,7 +34,7 @@ body{
 .card{
   width:var(--card-w);
   max-width:calc(100% - 40px);
-  height:var(--card-h);
+   height:auto; 
   background: linear-gradient(180deg, rgba(255,255,255,0.06), rgba(255,255,255,0.03));
   border-radius:var(--radius);
   border: 1px solid var(--glass-border);
@@ -153,6 +153,51 @@ body{
   }
 
 }
+/* FINAL STRONG MOBILE FIX */
+@media (max-width:600px){
+
+  body {
+    padding: 10px;
+  }
+
+  .card{
+    width: 100%;
+    height: auto !important;      /* force flexible height */
+    padding: 16px;
+  }
+
+  .result{
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 12px;
+  }
+
+  .weather-left{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .icon{
+    width: 120px !important;
+    height: 120px !important;
+    transform: scale(0.8);        /* shrink icons on phone */
+  }
+
+  .metrics{
+    width: 100%;
+    display: flex;
+    gap: 8px;
+    justify-content: space-between;
+  }
+
+  .metric{
+    min-width: 90px;
+    padding: 8px;
+  }
+
+}
+
 
 
 
