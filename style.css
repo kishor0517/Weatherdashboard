@@ -198,6 +198,24 @@ body{
 
 }
 
+@media (max-width: 600px) {
+
+  body {
+    display: block !important;    
+    padding: 10px !important;    
+  }
+
+  .app {
+    display: block !important;    
+  }
+
+  .card {
+    margin-top: 0 !important;    
+  }
+
+}
+
+
 
 
 
